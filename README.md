@@ -12,7 +12,7 @@ Här kan du **lägga in dina växter** och få **tips & tricks** om vattning, om
 
 ## ✨ Funktioner (MVP)
 
-- 📒 **Mina växter** – Lägg till växter med namn, bild och skötselinfo.
+- 📒 **Mina växter** – Lägg till växter med namn, bild och skötselinfo. Samt vart blomman är plaserad t.ex vardagsrum + sydläge.
 - 💧 **Vattningsschema** – Håll koll på senaste vattning och nästa påminnelse.
 - 🔎 **Utforska** – Sök bland andra växter och inspireras.
 - 📝 **Anteckningar** – Spara egna tips och observationer.
@@ -23,5 +23,5 @@ Här kan du **lägga in dina växter** och få **tips & tricks** om vattning, om
 
 - [Next.js](https://nextjs.org/) (React under huven)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [CSS]
 - LocalStorage (för MVP – byts senare till backend/databas)
