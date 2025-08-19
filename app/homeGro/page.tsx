@@ -7,7 +7,6 @@ import { addPlant, getPlants, removePlant, updatePlant } from "../../library/sto
 import type { Plant } from "../../library/types";
 
 
-// Hjälpare: beräkna dagar till nästa vattning
 function daysUntilNextWatering(p: Plant): number | null {
   if (!p.wateringIntervalDays || !p.lastWatered) return null;
   const last = new Date(p.lastWatered);
@@ -27,13 +26,12 @@ export default function HomeGroPage() {
   // List state
   const [plants, setPlants] = useState<Plant[]>([]);
 
-  // Ladda vid mount
   useEffect(() => {
     setPlants(getPlants());
   }, []);
 
   // Lägg till växt
-  function handleAdd(e: React.FormEvent) {
+  function handleAddPlant(e: React.FormEvent) {
     e.preventDefault();
     const trimmed = name.trim();
     if (!trimmed) return;
@@ -90,7 +88,7 @@ export default function HomeGroPage() {
       </p>
 
       {/* Formulär */}
-      <form className={styles.form} onSubmit={handleAdd}>
+      <form className={styles.form} onSubmit={handleAddPlant}>
         <div className={`${styles.row} ${styles.row3}`}>
           <div>
             <label className={styles.label}>Växtsort</label>

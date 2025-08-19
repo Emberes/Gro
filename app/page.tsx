@@ -2,11 +2,9 @@
 
 
 import styles from "./page.module.css";
-import HomeGro from ".//homeGro/page";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
-import router from "next/router";
 import Image from "next/image";
 
 

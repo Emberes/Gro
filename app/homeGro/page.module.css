@@ -18,7 +18,7 @@
 
 /* Form */
 .form {
-  background: var(--peach);
+  background: white;
   border: 1px solid rgba(0,0,0,.06);
   border-radius: 12px;
   padding: 16px;
@@ -43,7 +43,7 @@
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,.12);
   font-size: 15px;
-  background: var(--peach);
+  background: rgb(231, 247, 226);
 }
 .textarea { min-height: 88px; resize: vertical; }
 
